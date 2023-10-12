@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>is it my birthday</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            text-align: center;
+            height: 100vh;
+            width: 1000px;
+            margin: 0px auto;
+            justify-content: center;
+        }
+
+        h1 {
+            font-size: 400px;
+        }
+
+        p {
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1></h1>
+    <p></p>
+</body>
+<script>
+    let date = new Date();
+    let h1 = document.querySelector("h1");
+    let p = document.querySelector("p");
+
+    let msg;
+    (date.getDate() === 2 && date.getMonth() === 9) ? msg = "YES" : msg = "NO";
+    h1.innerHTML = msg;
+
+    let msg2;
+    (date.getDate() === 2 && date.getMonth() === 9) ? msg2 = "Happy Birthday!!" : msg2 = "Your Birthday is on 2nd October.";
+    p.innerHTML = msg2;
+</script>
+</html>
